@@ -38,24 +38,22 @@ Run cells top-to-bottom. Each section saves charts to `charts/` and data to `dat
 # ──────────────────────────────────────────────────────────────────────────────
 md("## Cell 1 — Install Dependencies")
 code("""\
-import subprocess, sys, importlib
+import subprocess, sys
 
 def pip(*args):
     subprocess.check_call(
         [sys.executable, "-m", "pip", "install", *args, "-q", "--break-system-packages"],
         stderr=subprocess.DEVNULL)
 
-# ── NumPy 2.x guard: pyarrow<14 crashes on numpy>=2.0 ──────────────────────
-import numpy as np
-if tuple(int(x) for x in np.__version__.split(".")[:2]) >= (2, 0):
-    pip("pyarrow>=14.0.0")   # pyarrow 14+ supports numpy 2.x
-else:
-    pip("pyarrow")
-
+# ── Install / upgrade all dependencies ──────────────────────────────────────
+# pandas>=2.2.0 and pyarrow>=14.0.0 ship numpy-2.x-compatible C extensions.
+# Must be installed BEFORE pandas is imported (i.e. before Cell 2).
 pkgs = [
+    "pandas>=2.2.0",           # numpy 2.x-compatible wheels
+    "pyarrow>=14.0.0",         # numpy 2.x-compatible wheels
     "yfinance==1.3.0",
     "plotly==6.7.0",
-    "kaleido==0.2.1",   # MUST be 0.2.1 — v1+ breaks write_image
+    "kaleido==0.2.1",          # MUST be 0.2.1 — v1+ breaks write_image
     "PyPortfolioOpt",
     "cvxpy",
     "fredapi",
@@ -65,6 +63,7 @@ for pkg in pkgs:
     pip(pkg)
 print("All packages installed.")
 
+import numpy as np
 import kaleido
 assert kaleido.__version__.startswith("0.2"), f"Wrong kaleido version: {kaleido.__version__}"
 print(f"kaleido {kaleido.__version__} ✓")
