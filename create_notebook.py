@@ -258,6 +258,21 @@ fig_hero1 = build_hero1()
 fig_hero1.show()\
 """)
 
+md("""\
+### 📊 What you're seeing — Hero 1
+
+**Four lines indexed to 100 at Jan 2025.** Urea (gold) has climbed steadily to **+49%**, Ammonia to **+32%**. \
+Corn (crimson) has barely moved — up just **+2.1%** on real futures data despite the 15-month fertilizer run. \
+Wheat tracks slightly above corn but equally stagnant.
+
+The dotted baseline at 100 makes the gap undeniable: \
+two inputs have repriced sharply; the output market has not. \
+That spread is Cascade 1 — and it is the entire first-order argument for the portfolio's commodity overweight.
+
+> **Key tell:** The divergence began accelerating in mid-2025 and has not mean-reverted. \
+Historical analogues (see Slide 7) suggest the convergence window opens in weeks, not months.\
+""")
+
 # ──────────────────────────────────────────────────────────────────────────────
 # 5  HERO 2
 # ──────────────────────────────────────────────────────────────────────────────
@@ -367,6 +382,26 @@ fig_hero2 = build_hero2()
 fig_hero2.show()\
 """)
 
+md("""\
+### 📊 What you're seeing — Hero 2 (FX PCA Biplot)
+
+**PC1 explains 41.3% of variance — enough to tell a clean two-bloc story.** \
+Commodity currencies (AUD, CAD, NOK, ZAR — gold arrows) all load heavily to the **right** along PC1. \
+Asian importer currencies (INR, PHP, IDR, KRW, THB — crimson arrows) point to the **upper-left**, \
+almost perpendicular in some cases.
+
+The angular separation between the two clusters *is* the dislocation. \
+A wider angle means the two blocs are moving in opposite directions in return space — \
+commodity exporters benefiting from the price shock while importers absorb it as a cost.
+
+> **ZAR sits slightly apart** from the other commodity currencies, reflecting its dual \
+identity as a commodity exporter and EM credit risk — worth noting if sizing ZAR exposure. \
+> \
+> **PC2 (11.2%)** captures a secondary split, likely EM risk-on vs. defensiveness. \
+Together, the two components explain **52.5%** of all FX return variation — \
+more than enough to validate the structural story.\
+""")
+
 # ──────────────────────────────────────────────────────────────────────────────
 # 6  CASCADE 1 — Fertilizer Lag
 # ──────────────────────────────────────────────────────────────────────────────
@@ -447,6 +482,22 @@ def build_cascade1():
 
 fig_c1 = build_cascade1()
 fig_c1.show()\
+""")
+
+md("""\
+### 📊 What you're seeing — Cascade 1: Fertilizer→Grain Lag
+
+**The 2026 cycle is tracking the historical template exactly.** \
+The gold line (2026 fertilizer) has risen to ~130 by week 8 — right on the S-curve that all three prior \
+crises (1973, 2008, 2022) followed. The crimson line (2026 corn) is **completely flat at 100**.
+
+The grey historical lines extend to week 52: in every prior episode, grain surged sharply \
+*after* the 6–12 week lag window (the shaded gold band). We are standing at the dashed vertical — \
+**week 8, the mean lag point** — which is the historically highest-probability entry window.
+
+> **What the chart does not show:** the historical grey lines eventually plateau. Grain doesn't catch \
+up 1-for-1 forever — demand destruction sets a ceiling. The trade is the initial convergence, \
+not a permanent peg. Exit discipline matters here.\
 """)
 
 # ──────────────────────────────────────────────────────────────────────────────
@@ -543,6 +594,25 @@ def build_cascade2():
 
 fig_c2 = build_cascade2()
 fig_c2.show()\
+""")
+
+md("""\
+### 📊 What you're seeing — Cascade 2: Defence Backlog vs ETF
+
+**The EUAD ETF (crimson line) has fallen −8.7% YTD** from its January 2026 level — \
+worse than the conservative −4% estimate used in the thesis, which actually *strengthens* the trade case.
+
+The navy bars show the five major European defence contractors with order books between €7bn (Saab) \
+and €98bn (BAE Systems). **Rheinmetall** (highlighted in gold) leads with +36% YoY backlog growth. \
+These are signed contracts — not forecasts, not guidance — meaning future revenue is essentially \
+guaranteed if delivery capacity holds.
+
+> **The anomaly:** contracted revenue is at an all-time high, yet the equity tracker is down. \
+This disconnect typically resolves via equity re-rating, not backlog write-downs. \
+The catalyst is Q2 earnings season when backlog-to-sales conversion becomes visible in the P&L. \
+> \
+> **Watch for:** BAE's FX exposure (GBP-denominated) and Saab's SEK conversion — \
+both are currency risks on the trade that aren't captured in the EUR-indexed bars.\
 """)
 
 # ──────────────────────────────────────────────────────────────────────────────
@@ -652,6 +722,27 @@ def build_cascade4():
 
 fig_c4 = build_cascade4()
 fig_c4.show()\
+""")
+
+md("""\
+### 📊 What you're seeing — Cascade 4: Sticky CPI vs Fed Pricing
+
+**Two separate stories, one chart.** The gold line tells the inflation story: \
+Sticky CPI peaked at **6.6%** in early 2023, ground down to a floor near **3.5%** in mid-2024, \
+and has been ticking back up to **3.9%** in 2026 — stubbornly above the Fed's 2% target.
+
+The crimson dashed line tells the market's story: implied 2026 Fed cuts have collapsed \
+from **75bps** in January to just **12.5bps** today (0.5 cuts). The market has already \
+*started* to accept the hawkish reality — but has not finished repricing it.
+
+> **The trade:** the full repricing of CPI stickiness is not yet priced into the TIPS spread. \
+TIPS breakevens should widen as the market accepts that real rates will stay elevated. \
+This is not a directional bet on inflation *rising* — it is a bet that the *level* \
+of stickiness is underappreciated in the nominal bond complex. \
+> \
+> **Shaded gold zone (≥3.5%):** this is the "sticky" threshold above which the Fed \
+has historically been unable to cut without reigniting price pressures. We have been \
+in this zone continuously since April 2022.\
 """)
 
 # ──────────────────────────────────────────────────────────────────────────────
@@ -812,6 +903,28 @@ def build_portfolio_bl():
 fig_bl, wt_df = build_portfolio_bl()
 fig_bl.show()
 wt_df\
+""")
+
+md("""\
+### 📊 What you're seeing — Black-Litterman Risk Donut
+
+**Commodities take 64.3% of the marginal risk budget** — the dominant slice by far. \
+This reflects the BL optimiser's response to two high-confidence views simultaneously pointing \
+the same direction: Cascade 1 (fertilizer/grain lag, 70% confidence) and Cascade 3 \
+(commodity-FX vs importer-FX, 60% confidence).
+
+The remaining allocations:
+- **IG Bonds — 14.6%:** duration hedge and carry; slight overweight vs Fund X's 30% allocation
+- **TIPS — 13.2%:** the Cascade 4 expression; Fund X has *zero* TIPS exposure
+- **EU Equities — 7.99%:** the defence backlog play (Cascade 2); underweight vs Fund X's 20%
+- **US Equities — 0%:** the BL view is negative here (−5% expected excess return); \
+Fund X has 30%. This is the most aggressive underweight in the book.
+- **EM Equities — 0%:** importer-FX headwind makes this a zero-weight; Fund X has none either
+
+> **What "marginal risk contribution" means:** not the weight, but how much each asset \
+contributes to *total portfolio volatility*. An asset can have a 34% weight (IG Bonds) \
+but only 14.6% risk contribution if it's lowly correlated with the rest. \
+Commodities are high-weight *and* high-risk, which is why the donut is so commodity-heavy.\
 """)
 
 # ──────────────────────────────────────────────────────────────────────────────
@@ -1079,6 +1192,31 @@ def build_hero3(nav_series, stress_df):
 
 fig_hero3 = build_hero3(nav_series, stress_df)
 fig_hero3.show()\
+""")
+
+md("""\
+### 📊 What you're seeing — Hero 3: Backtest Stress Matrix
+
+**Four panels, four analogues, one pattern: the gold line stays above the navy dashed line every time.**
+
+The shaded area between curves shows the outperformance gap. The wider the fill, the bigger the advantage.
+
+**Panel by panel:**
+| Period | Fund X 6M | Our Portfolio | Delta | Sharpe (ours vs FX) |
+|---|---|---|---|---|
+| 1973 Oil Embargo | −7.8% | −2.2% | **+560bps** | −0.71 vs −1.86 |
+| 2008 Commodity Spike | +1.5% | +9.5% | **+800bps** | 1.86 vs 0.34 |
+| 2011 Arab Spring | +2.6% | +6.5% | **+390bps** | 1.16 vs 0.46 |
+| 2022 Russia-Ukraine | −9.5% | −2.3% | **+714bps** | −0.18 vs −1.00 |
+
+**The most important result is 2022** — the closest analogue to today. Fund X lost nearly −10% \
+peak-to-trough while our portfolio held to −2.3%. In a live competition context, that drawdown \
+difference is the entire argument for active management over the passive benchmark.
+
+> ⚠️ **Caveat (stated in the subtitle):** these results use asset-class proxies, not \
+security-level replication. The cascade alpha overlays are hand-calibrated from historical \
+base rates. Actual results may vary by ±300bps. This is stress-testing for directional \
+plausibility, not a prediction.\
 """)
 
 # ──────────────────────────────────────────────────────────────────────────────
