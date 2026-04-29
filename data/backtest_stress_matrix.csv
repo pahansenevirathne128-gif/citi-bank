@@ -1,5 +1,2 @@
-period,fund_x_6m_return,our_portfolio_6m_return,delta_bps,fund_x_mdd,our_portfolio_mdd,fund_x_sharpe,our_portfolio_sharpe
-1973 Oil Embargo,-7.8%,-2.2%,560,-9.8%,-5.5%,-1.86,-0.71
-2008 Commodity Spike,1.5%,9.5%,800,-5.5%,-4.3%,0.34,1.86
-2011 Arab Spring,2.6%,6.5%,390,-8.6%,-6.0%,0.46,1.16
-2022 Russia-Ukraine,-9.5%,-2.3%,714,-13.7%,-10.5%,-1.00,-0.18
+Period,Fund_X_6m,Ours_6m,Delta_bps
+2022,-11.0%,-5.6%,+539

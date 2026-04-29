@@ -1,0 +1,5 @@
+Portfolio,Cascade1_NAV%,Total_TCost_bps,Base_Net_bps,Bull_Net_bps,Bear_Net_bps,Stag_Net_bps,ProbWeighted_Net_bps,Approx_Sharpe
+A — Status Quo  (C1=26%),26,33,569,1592,-590,242,567,0.637
+B — Trimmed     (C1=20%),20,32,528,1488,-560,221,526,0.658
+C — Diversified (C1=18%),18,32,514,1453,-550,214,512,0.665
+D — Overweight  (C1=32%),32,33,611,1697,-620,263,609,0.621
