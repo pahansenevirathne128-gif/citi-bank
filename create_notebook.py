@@ -38,26 +38,37 @@ Run cells top-to-bottom. Each section saves charts to `charts/` and data to `dat
 # ──────────────────────────────────────────────────────────────────────────────
 md("## Cell 1 — Install Dependencies")
 code("""\
-import subprocess, sys
+import subprocess, sys, importlib
+
+def pip(*args):
+    subprocess.check_call(
+        [sys.executable, "-m", "pip", "install", *args, "-q", "--break-system-packages"],
+        stderr=subprocess.DEVNULL)
+
+# ── NumPy 2.x guard: pyarrow<14 crashes on numpy>=2.0 ──────────────────────
+import numpy as np
+if tuple(int(x) for x in np.__version__.split(".")[:2]) >= (2, 0):
+    pip("pyarrow>=14.0.0")   # pyarrow 14+ supports numpy 2.x
+else:
+    pip("pyarrow")
 
 pkgs = [
     "yfinance==1.3.0",
     "plotly==6.7.0",
     "kaleido==0.2.1",   # MUST be 0.2.1 — v1+ breaks write_image
-    "pyarrow",
     "PyPortfolioOpt",
     "cvxpy",
     "fredapi",
     "pandas-datareader",
 ]
 for pkg in pkgs:
-    subprocess.check_call([sys.executable, "-m", "pip", "install", pkg, "-q",
-                           "--break-system-packages"], stderr=subprocess.DEVNULL)
+    pip(pkg)
 print("All packages installed.")
 
 import kaleido
 assert kaleido.__version__.startswith("0.2"), f"Wrong kaleido version: {kaleido.__version__}"
-print(f"kaleido {kaleido.__version__} ✓")\
+print(f"kaleido {kaleido.__version__} ✓")
+print(f"numpy   {np.__version__} ✓")\
 """)
 
 # ──────────────────────────────────────────────────────────────────────────────
