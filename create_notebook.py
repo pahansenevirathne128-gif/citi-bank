@@ -774,7 +774,8 @@ def build_portfolio_bl():
         # Align columns to our ticker order
         prices.columns = [c.replace("=X","").replace("=F","") for c in prices.columns]
         col_map = {v["ticker"].replace("=X","").replace("=F",""): k for k, v in ASSETS.items()}
-        prices = prices.rename(columns=col_map)[[k for k in keys if k in prices.columns]]
+        prices = prices.rename(columns=col_map)
+        prices = prices[[k for k in keys if k in prices.columns]]
         prices = prices.dropna()
         if prices.shape[1] < 5:
             raise ValueError(f"Only {prices.shape[1]} assets loaded")
