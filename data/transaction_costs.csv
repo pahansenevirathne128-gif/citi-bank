@@ -1,40 +1,40 @@
-Position,Notional_USDmm,Bucket,Cost_bps_1way,Cost_USDmm_1way,Cost_USDmm_RT,Cost_bps_of_NAV
-Long fertilizer producers (CF/NTR/MOS/ICL),55,DM_equity,20,0.11,0.22,4.4
-Long ag equipment (DE/AGCO/CNHI),18,DM_equity,20,0.036,0.072,1.4399999999999997
-Long EU defence primes (RHM/BAE/LDO/HO/SAAB),50,DM_equity,20,0.1,0.2,4.0
-Long defence suppliers (ESLT/KTOS/HII),18,DM_equity,20,0.036,0.072,1.4399999999999997
-Long US energy majors (XOM/CVX/COP),40,DM_equity,20,0.08,0.16,3.2
-Long gold miners (NEM/AEM/FNV),30,DM_equity,20,0.06,0.12,2.4
-Long ASX defence (ASB/EOS/DRO),8,DM_equity,20,0.016,0.032,0.64
-Long Brazil equities (PBR/VALE/ITUB),15,EM_equity,50,0.075,0.15,2.9999999999999996
-Long Mexico equities (WALMEX/FEMSA),8,EM_equity,50,0.04,0.08,1.6
-Long EM ex-Asia basket,6,EM_equity,50,0.03,0.06,1.2
-Short packaged food (KHC/GIS/CPB/UN),28,DM_equity,20,0.056,0.112,2.2399999999999998
-Short EU autos (VOW/STLA/BMW/MBG),22,DM_equity,20,0.044,0.088,1.76
-Short airlines (LHA/AF/RYA/DAL),20,DM_equity,20,0.04,0.08,1.6
-Short Asian manufacturers,14,DM_equity,20,0.028,0.056,1.1199999999999999
-Short US consumer cyclicals,6,DM_equity,20,0.012,0.024,0.48000000000000004
-Long TIPS 5Y belly,50,FI_G10,25,0.125,0.25,5.0
-Long 2Y UST (curve steepener),40,FI_G10,25,0.1,0.2,4.0
-Short 10Y UST (curve steepener),30,FI_G10,25,0.075,0.15,2.9999999999999996
-Long Chinese Govt Bonds,20,FI_other,60,0.12,0.24,4.8
-Long Brazilian local-currency debt,15,FI_other,60,0.09,0.18,3.5999999999999996
-Long AUD/USD,18,FX_G10,5,0.009,0.018,0.35999999999999993
-Long CAD/USD,15,FX_G10,5,0.0075,0.015,0.3
-Long NOK/SEK,8,FX_G10,5,0.004,0.008,0.16
-Long EUR/USD,7,FX_G10,5,0.0035,0.007,0.13999999999999999
-Long AUD/JPY,12,FX_G10,5,0.006,0.012,0.24000000000000002
-Long CHF/JPY,8,FX_G10,5,0.004,0.008,0.16
-Long BRL/USD,15,FX_other,30,0.045,0.09,1.7999999999999998
-Long MXN/USD,12,FX_other,30,0.036,0.072,1.4399999999999997
-Short KRW/USD,22,FX_other,30,0.066,0.132,2.64
-Short TWD/USD,18,FX_other,30,0.054,0.108,2.1599999999999997
-Short INR/USD,12,FX_other,30,0.036,0.072,1.4399999999999997
-Short CNH/USD,8,FX_other,30,0.024,0.048,0.9600000000000001
-Long Brent crude futures,30,commodities,20,0.06,0.12,2.4
-Long Gold,30,commodities,20,0.06,0.12,2.4
-Long corn futures,12,commodities,20,0.024,0.048,0.9600000000000001
-Long wheat futures,10,commodities,20,0.02,0.04,0.8
-Long soybean futures,5,commodities,20,0.01,0.02,0.4
-Long natural gas,15,commodities,20,0.03,0.06,1.2
-Long copper,5,commodities,20,0.01,0.02,0.4
+Position,Notional_USDmm,Bucket,Cost_bps_1way,Cost_USDmm_RT
+Long fertilizer producers (CF/NTR/MOS/ICL),55,DM_equity,20,0.22
+Long ag equipment (DE/AGCO/CNHI),18,DM_equity,20,0.072
+Long EU defence primes (RHM/BAE/LDO/HO/SAAB),50,DM_equity,20,0.2
+Long defence suppliers (ESLT/KTOS/HII),18,DM_equity,20,0.072
+Long US energy majors (XOM/CVX/COP),40,DM_equity,20,0.16
+Long gold miners (NEM/AEM/FNV),30,DM_equity,20,0.12
+Long ASX defence (ASB/EOS/DRO),8,DM_equity,20,0.032
+Long Brazil equities (PBR/VALE/ITUB),15,EM_equity,50,0.15
+Long Mexico equities (WALMEX/FEMSA),8,EM_equity,50,0.08
+Long EM ex-Asia basket,6,EM_equity,50,0.06
+Short packaged food (KHC/GIS/CPB/UN),28,DM_equity,20,0.112
+Short EU autos (VOW/STLA/BMW/MBG),22,DM_equity,20,0.088
+Short airlines (LHA/AF/RYA/DAL),20,DM_equity,20,0.08
+Short Asian manufacturers,14,DM_equity,20,0.056
+Short US consumer cyclicals,6,DM_equity,20,0.024
+Long TIPS 5Y belly,50,FI_G10,25,0.25
+Long 2Y UST (curve steepener),40,FI_G10,25,0.2
+Short 10Y UST (curve steepener),30,FI_G10,25,0.15
+Long Chinese Govt Bonds,20,FI_other,60,0.24
+Long Brazilian local-currency debt,15,FI_other,60,0.18
+Long AUD/USD,18,FX_G10,5,0.018
+Long CAD/USD,15,FX_G10,5,0.015
+Long NOK/SEK,8,FX_G10,5,0.008
+Long EUR/USD,7,FX_G10,5,0.007
+Long AUD/JPY,12,FX_G10,5,0.012
+Long CHF/JPY,8,FX_G10,5,0.008
+Long BRL/USD,15,FX_other,30,0.09
+Long MXN/USD,12,FX_other,30,0.072
+Short KRW/USD,22,FX_other,30,0.132
+Short TWD/USD,18,FX_other,30,0.108
+Short INR/USD,12,FX_other,30,0.072
+Short CNH/USD,8,FX_other,30,0.048
+Long Brent crude futures,30,commodities,20,0.12
+Long Gold,30,commodities,20,0.12
+Long corn futures,12,commodities,20,0.048
+Long wheat futures,10,commodities,20,0.04
+Long soybean futures,5,commodities,20,0.02
+Long natural gas,15,commodities,20,0.06
+Long copper,5,commodities,20,0.02
