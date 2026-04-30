@@ -1,4 +1,4 @@
-Position,Notional_USDmm,Bucket,Cost_bps_1way,Cost_USDmm_RT
+Position,Notional_USDmm,Bucket,Cost_bps_1way,Cost_RT_USDmm
 Long fertilizer producers (CF/NTR/MOS/ICL),55,DM_equity,20,0.22
 Long ag equipment (DE/AGCO/CNHI),18,DM_equity,20,0.072
 Long EU defence primes (RHM/BAE/LDO/HO/SAAB),50,DM_equity,20,0.2
@@ -17,7 +17,7 @@ Short US consumer cyclicals,6,DM_equity,20,0.024
 Long TIPS 5Y belly,50,FI_G10,25,0.25
 Long 2Y UST (curve steepener),40,FI_G10,25,0.2
 Short 10Y UST (curve steepener),30,FI_G10,25,0.15
-Long Chinese Govt Bonds,20,FI_other,60,0.24
+Long Chinese Govt Bonds (FX-hedged),20,FI_other,60,0.24
 Long Brazilian local-currency debt,15,FI_other,60,0.18
 Long AUD/USD,18,FX_G10,5,0.018
 Long CAD/USD,15,FX_G10,5,0.015
@@ -36,5 +36,5 @@ Long Gold,30,commodities,20,0.12
 Long corn futures,12,commodities,20,0.048
 Long wheat futures,10,commodities,20,0.04
 Long soybean futures,5,commodities,20,0.02
-Long natural gas,15,commodities,20,0.06
+Long natural gas (TTF/JKM/HH),15,commodities,20,0.06
 Long copper,5,commodities,20,0.02
