@@ -1,5 +1,5 @@
-Period,Fund X,Strait Capital,Alpha (bps)
-1973 (OPEC shock),7.5%,16.2%,+863
-2008 (Agri/Energy),-9.4%,2.3%,+1171
-2011 (Arab Spring),5.8%,9.7%,+386
-2022 (Ukraine war),-11.0%,-5.4%,+566
+Period,Source,Fund X,Strait Capital,Alpha (bps)
+1973 (OPEC shock),FRED,-6.7%,3.3%,+1002
+2008 (Agri/Energy),FRED,-24.6%,-18.5%,+613
+2011 (Arab Spring),FRED,-4.6%,-2.1%,+248
+2022 (Ukraine war),FRED,-11.5%,-5.4%,+613
